@@ -24,7 +24,6 @@ export function EditVideo(){
   function LoadCategories(){
     axios.get("http://localhost:3030/get-categories")
     .then(response=>{
-      response.data.unshift({CategoryId:-1,CategoryName:"Select category"})
       setCategories(response.data);
     })
   }

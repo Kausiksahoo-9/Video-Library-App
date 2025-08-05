@@ -33,7 +33,7 @@ export function UserDashBoard(){
       <main className="d-flex flex-wrap mt-4">
         {
           videos.map(video=>(
-            <div key={video.VideoId} className="card m-2 p-2" style={{width:'250'}}>
+            <div key={video.VideoId} className="card m-2 p-2" style={{width:'350px'}}>
               <div className="card-header" style={{height:"200px"}}>
                 <iframe src={video.Url} width="100%" height="200"></iframe>
               </div>

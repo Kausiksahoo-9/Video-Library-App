@@ -24,19 +24,21 @@ export function DeleteVideo(){
   }
 
   return(
-    <div>
-      <h3>Delete Video</h3>
-      <p>Are you sure? what to delete?</p>
-      <div className="card w-25">
-        <div className="card-header">
-          <iframe src={videos[0].Url} width="100%" ></iframe>
-        </div>
-        <div className="card-body">
-          {videos[0].Title}
-        </div>
-        <div className="card-footer">
-          <button onClick={handleYesClick} className="btn btn-success me-2">Yes</button>
-          <Link className='btn btn-danger' to='/admin-dashboard'>No</Link>
+    <div className='d-flex justify-content-center align-items-center'>
+      <div>
+        <h3>Delete Video</h3>
+        <p>Are you sure? what to delete?</p>
+        <div className="card w-100">
+          <div className="card-header">
+            <iframe src={videos[0].Url} width="100%" ></iframe>
+          </div>
+          <div className="card-body">
+            {videos[0].Title}
+          </div>
+          <div className="card-footer">
+            <button onClick={handleYesClick} className="btn btn-success me-2">Yes</button>
+            <Link className='btn btn-danger' to='/admin-dashboard'>No</Link>
+          </div>
         </div>
       </div>
     </div>
