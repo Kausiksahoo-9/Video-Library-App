@@ -37,19 +37,19 @@ export function AddVideos(){
         <h2 className="text-warning px-5">Add New Video</h2><br />
         <dl className="row">
           <dt className="col-3">VideoId</dt>
-          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="VideoId" /></dd>
+          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="VideoId" required/></dd>
           <dt className="col-3">Title</dt>
-          <dd className="col-9"><input onChange={formik.handleChange} type="text" name="Title" /></dd>
+          <dd className="col-9"><input onChange={formik.handleChange} type="text" name="Title" required/></dd>
           <dt className="col-3">Url</dt>
-          <dd className="col-9"><input onChange={formik.handleChange} type="text" name="Url" /></dd>
+          <dd className="col-9"><input onChange={formik.handleChange} type="text" name="Url" required/></dd>
           <dt className="col-3">Description</dt>
           <dd className="col-9"><textarea onChange={formik.handleChange} name="Description" rows="4" cols="40"></textarea></dd>
           <dt className="col-3">Likes</dt>
-          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="Likes" /></dd>
+          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="Likes" required/></dd>
           <dt className="col-3">Dislikes</dt>
-          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="Dislikes" /></dd>
+          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="Dislikes" required/></dd>
           <dt className="col-3">Views</dt>
-          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="Views" /></dd>
+          <dd className="col-9"><input onChange={formik.handleChange} type="number" name="Views" required/></dd>
           <dt className="col-3">Category</dt>
           <dd className="col-9">
             <select onChange={formik.handleChange} name="categoryId">
