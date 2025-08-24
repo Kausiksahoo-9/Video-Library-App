@@ -45,6 +45,9 @@ export function UserLogin(){
           <dt>Password</dt>
           <dd><input type="password" onChange={formik.handleChange} name="Password" className='form-control' /></dd>
         </dl>
+        <p>
+            Already have account? <span onClick={() => navigate('/register-user')} className="text-primary cursor-pointer">click here</span>
+        </p>
         <button type="submit" className="btn btn-warning w-100">Login</button>
       </form>
     </div>
